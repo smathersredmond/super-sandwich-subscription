@@ -9,6 +9,11 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+.btn-danger {
+	background-color: black;
+}
+
+
 
 h1 {font-size: 3rem;
 	color: #444d56;
