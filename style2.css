@@ -103,3 +103,29 @@
     background: linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* IE6-9 */
 }
+body {
+  font: 'Raleway', sans-serif;
+  color: rgba(0,0,0,.6);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  top: 15%;
+  background: linear-gradient(to right, red, blue);
+}
+
+h1 {
+    font: 700 3.6em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.6);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    width: 100%; 
+}
+
+h2 {
+    font: 910 1.6em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.6);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: .02em; 
+}
