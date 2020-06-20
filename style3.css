@@ -1,0 +1,46 @@
+body {
+    background-image:linear-gradient(to right, pink, grey) ;
+    background-size: 100%;
+    background-position: 100%; 
+    
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+.home {
+  display: flex;
+  justify-content: center;
+}
+.sando {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+    font: 500 2.6em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.6);
+    text-align: center;
+    text-transform: uppercase; 
+    border-bottom: 2px solid;
+    border-bottom-color: rgba(0,0,0,.6);
+   
+    letter-spacing: .4em;
+    width: 100%; 
+}
+h2 {
+  text-decoration: underline overline;
+}
+.tags {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+ul{ 
+
+    position:relative; /* <-- anchor child li elements positions relative to this */
+}
+li{
+
+    position:absolute; /* <--- position allows for 'layering' */
+    top:0; /* position should start in the same top left corner of the parent ul*/
+    left:0; /* position should start in the same top left corner of the parent ul*/
+}
