@@ -1,7 +1,8 @@
 body {
     background-image:linear-gradient(to right, pink, grey) ;
     background-size: 100%;
-    background-position: 100%; 
+    background-position: 100%;
+    font-size:18px;
     
 }
 
