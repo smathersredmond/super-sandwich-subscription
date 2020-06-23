@@ -1,29 +1,21 @@
 
-img {
-    width: 500px;
-    height: 400px;
-    margin: 6px;
-}
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 
-
-}
 body {
- 
-  color: rgba(0,0,0,.6);
+  
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .4em;
-  top: 15%;
+  margin: 0;
+  padding: 0;
+  background: rgba(0,0,0,.6);
   background: linear-gradient(to right, #F672AB, #B7B0B3);
+  font-family: sans-serif;
+color: rgba(0,0,0,.6);
 }
-
 h1 {
     font-family: "Oswald";
-    border-bottom: 2px solid grey; 
+    border-bottom: 2px solid grey;
+    color: rgba(0,0,0,.6); 
 }
 
 
@@ -46,21 +38,80 @@ h2 {
     -8px -8px 0 firebrick,
     -30px 20px 40px dimgrey
 }
+.container{
+    width: 100%;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container .box
+{ 
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-flex;
 
-.zone {
-    cursor:pointer;
-    
-  
-    
-  
-    transition: all 0.3s linear;
+}
+.container .box .imgBox
+{
+    position: relative;
+    overflow: hidden;
 }
 
 
-
-.zone:hover {
-    transform: scale(0.95) ;
-   
+.container .box .imgBox img
+{
+    max-width: 100%;
+    transition: transform 2s;
+}
+.container .box:hover .imgBox img
+{
+    transform: scale(1.2);
 }
 
+.container .box .details
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
 
+.container .box:hover .details
+{
+    transform: scaleY(1);
+}
+.container .box .details .content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .box .details .content h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+.container .box .details .content p
+{
+    margin: 10px 0 0;
+    padding: 0;
+  
+}
+
+img{ object-fit: cover; width: 300px; height: 300px }
